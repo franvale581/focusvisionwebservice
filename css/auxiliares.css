@@ -1,0 +1,23 @@
+
+
+/*--- header ---*/
+
+.header-solid {
+    background-color: var(--deep-blue);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+  /* Navbar glass */
+  .header-glass {
+    background-color: rgba(11, 9, 10, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* para Safari */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+
+  /*blur img to cooming soon websites*/
+
+  .blur-img {
+    filter: blur(15px);
+  }

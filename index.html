@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Vision Web Service</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS CSS link -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- css links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/auxiliares.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="./assets/logo/logo-blanco.png" alt="logo">
+                <h1>Focus Vision Web Service</h1>
+            </div>
+            <ul class="nav-links-container">
+                <li class="nav-link"><a href="#"><span>Home</span></a></li>
+                <li class="nav-link"><a href="#products">Product</a></li>
+                <li class="nav-link"><a href="#footer">Contact</a></li>
+            </ul>
+            <!-- custom burger -->
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/carrousel/banner-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/carrousel/banner-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/carrousel/banner-3.jpg" alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+    </section>
+
+    <section id="products">
+        <!-- banner-title -->
+        <div class="products-banner" id="products-banner">
+            <h2 class="products-h2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Web Design Examples
+            </h2>
+        </div>
+
+        <!-- products-services -->
+        <div class="products-list">
+            <div class="product" data-aos="fade-up" data-aos-delay="0">
+                <a href="https://nft-landing-snowy.vercel.app/" target="_blank" class="product-image">
+                    <img src="./assets/product/product-1.png" alt="Web 1">
+                </a>
+                <div class="product-info">
+                    <h3>NFT Web example</h3>
+                    <p>This example showcases our ability to craft stylized and minimal one-page websites. <span>CLICK IMAGE TO SHOW</span></p>
+                </div>
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://webexample-phi.vercel.app/" target="_blank" class="product-image">
+                    <img src="./assets/product/product-2.png" alt="Web 2">
+                </a>
+                <div class="product-info">
+                    <h3>Food web example</h3>
+                    <p>A site exemplifying style and minimalism. <span>CLICK IMAGE TO SHOW</span></p>
+                </div>
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://atony.vercel.app/" target="_blank" class="product-image">
+                    <img src="./assets/product/product-3.png" alt="Web 3">
+                </a>
+                <div class="product-info">
+                    <h3>Custom client web</h3>
+                    <p>A custom-built website tailored to the client’s taste — simple yet effective. <span>CLICK IMAGE TO SHOW</span></p>
+                </div>
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" target="_blank" class="product-image">
+                    <img class="blur-img" src="./assets/product/product-1.png" alt="Web 4">
+                </a>
+                <div class="product-info">
+                    <h3>COOMING SOON</h3>
+                    <p><span></span></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <img src="./assets/logo/logo-blanco.png" alt="logo">
+        </div>
+        <div class="footer-mid">
+            <ul>
+                <li class="footer-icon"><a href="https://www.instagram.com/focusvision.arg/" target="_blank"><i class="fa-brands fa-instagram"></a></i></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://www.tiktok.com/@focusvision.arg" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://youtube.com/@focusvision_arg?si=FU1yNUrSu2n6P7Ba" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p> © All rights reserved to Focus Vision Web Service.</p>
+    </div>
+
+    <!-- scripts -->
+    <script src="./main.js"></script>
+
+    <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/a0c4fed9cc.js" crossorigin="anonymous"></script>
+
+    <!-- AOS JS script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            allowTouchMode: true,
+            autoplay: {
+                delay: 4500,
+                pauseOnMouseEnter: true,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //     hide: 'false',
+
+            // },
+        });</script>
+
+</body>
+
+</html>
