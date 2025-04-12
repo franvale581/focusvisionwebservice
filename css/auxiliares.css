@@ -21,3 +21,17 @@
   .blur-img {
     filter: blur(15px);
   }
+
+  /* animacion bounce*/
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .logo-bounce {
+    animation: bounce 2s infinite ease-in-out;
+  }
