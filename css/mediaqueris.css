@@ -89,3 +89,20 @@
   }
 
 }
+
+@media (max-width: 420px) {
+    /* nav logo */
+    .header {
+        padding: 0 1rem;
+    }
+
+    .products-h2 {
+        font-size: 2rem;
+    }
+
+    /* product */
+    .products-h2 {
+        font-size: 1.8rem;
+    }
+
+}
