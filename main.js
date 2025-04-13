@@ -22,3 +22,48 @@ window.addEventListener('scroll', () => {
     }
   });
 
+ //agarramos clases para trabajarlas en js
+  const hamburger = document.querySelector(".hamburger input");
+  const navLinks = document.querySelector(".nav-links-container");
+  const overlay = document.querySelector(".overlay");
+
+  
+  
+  // Toggle del menú
+  const toggleMenu = () => {
+    navLinks.classList.toggle("open-menu", hamburger.checked);
+    overlay.classList.toggle("show-overlay", hamburger.checked);
+  };
+  
+  // Cierra el menú si se hace scroll
+  const closeOnScroll = () => {
+    if (!hamburger.checked) return;
+    hamburger.checked = false;
+    navLinks.classList.remove("open-menu");
+    overlay.classList.remove("show-overlay");
+  };
+  
+  // Cierra el menú al hacer clic en un link
+  const closeOnClick = (e) => {
+    if (!e.target.closest(".nav-link")) return;
+    hamburger.checked = false;
+    navLinks.classList.remove("open-menu");
+    overlay.classList.remove("show-overlay");
+  };
+  
+  // Cierra el menú al hacer clic en el overlay
+  const closeOnOverlayClick = () => {
+    hamburger.checked = false;
+    navLinks.classList.remove("open-menu");
+    overlay.classList.remove("show-overlay");
+  };
+  
+  const init = () => {
+    hamburger.addEventListener("change", toggleMenu);
+    window.addEventListener("scroll", closeOnScroll);
+    navLinks.addEventListener("click", closeOnClick);
+    overlay.addEventListener("click", closeOnOverlayClick);
+  };
+  
+  init();
+  

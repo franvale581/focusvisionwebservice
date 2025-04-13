@@ -1,0 +1,91 @@
+/*tablet*/
+@media (max-width: 1150px) {
+    /*header*/
+  
+    .nav-links-container {
+        position: fixed;
+        top: 65px;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        background-color: var(--deep-blue);
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 999;
+        display: none;
+        
+    }
+  
+    .nav-links-container a {
+      font-size: 18px;
+    }
+  
+    .hamburger {
+      display: flex;
+      order: 2;
+      cursor: pointer;
+    }
+  
+    .open-menu {
+      display: flex;
+    }
+
+
+}
+
+/* nav responsive*/
+
+@media (max-width: 1150px) {
+    /*logo h1*/
+    .nav-logo h1 {
+        font-size: 1.2rem;
+    }
+    .nav-logo img {
+        height: 2.9rem;
+    }
+
+    /*product*/
+    .product {
+        max-width: 350px;
+    }
+}
+
+/* mobile*/
+
+@media (max-width: 690px) {
+    /*product*/
+    .products-h2 {
+        font-size: 2.7rem;
+    }
+
+    /*footer*/
+ 
+  .footer-top img{
+    height: 4rem;
+  }
+ 
+  .footer-mid ul{
+    gap: 2rem;
+  }
+ 
+  .fa-instagram {
+    font-size: 1.5rem;
+  }
+ 
+ 
+  .fa-tiktok {
+    font-size: 1.5rem;
+  }
+ 
+  .fa-youtube {
+    font-size: 1.5rem;
+  }
+ 
+ 
+  .footer-bottom {
+    font-size: .7rem;
+  }
+
+}

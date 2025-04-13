@@ -2,6 +2,23 @@
 
 /*--- header ---*/
 
+/* overlay para el menu js*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998; /* debajo del menú, que está en 999 */
+  display: none;
+  background: rgba(0, 0, 0, 0.678);
+  display: none;
+}
+
+.show-overlay {
+  display: block;
+}
+
 .header-solid {
     background-color: var(--deep-blue);
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
