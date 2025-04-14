@@ -43,19 +43,43 @@
 
     <section class="hero" id="hero">
 
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="./assets/carrousel/banner-2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./assets/carrousel/banner-1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./assets/carrousel/banner-3.jpg" alt=""></div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 776px)" srcset="./assets/carrousel/banner-2-r2.jpg">
+          <source media="(max-width: 1144px)" srcset="./assets/carrousel/banner-2-r.jpg">
+          <source media="(min-width: 1145px)" srcset="./assets/carrousel/banner-2.jpg">
+          <img src="./assets/carrousel/banner-2.jpg" alt="Banner 2">
+        </picture>
+      </div>
+  
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 776px)" srcset="./assets/carrousel/banner-1-r2.jpg">
+          <source media="(max-width: 1144px)" srcset="./assets/carrousel/banner-1-r.jpg">
+          <source media="(min-width: 1145px)" srcset="./assets/carrousel/banner-1.jpg">
+          <img src="./assets/carrousel/banner-1.jpg" alt="Banner 1">
+        </picture>
+      </div>
+  
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width: 776px)" srcset="./assets/carrousel/banner-3-r2.jpg">
+          <source media="(max-width: 1144px)" srcset="./assets/carrousel/banner-3-r.jpg">
+          <source media="(min-width: 1145px)" srcset="./assets/carrousel/banner-3.jpg">
+          <img src="./assets/carrousel/banner-3.jpg" alt="Banner 3">
+        </picture>
+      </div>
+    </div>
+  
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  
             <!-- If we need navigation buttons -->
             <!-- <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div> -->

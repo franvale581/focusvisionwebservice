@@ -7,7 +7,7 @@
         top: 65px;
         right: 0;
         height: 100vh;
-        width: 300px;
+        width: 100%;
         flex-direction: column;
         background-color: var(--deep-blue);
         align-items: center;
@@ -55,9 +55,25 @@
 /* mobile*/
 
 @media (max-width: 690px) {
+
+      .header {
+        padding: 0 .5rem;
+    }
+
     /*product*/
+
+    #products {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 5rem;
+    }
+
     .products-h2 {
         font-size: 2.7rem;
+    }
+
+    .products-list {
+      margin-top: 4rem;
     }
 
     /*footer*/
@@ -93,16 +109,29 @@
 @media (max-width: 420px) {
     /* nav logo */
     .header {
-        padding: 0 1rem;
+        padding: 0 .5rem;
     }
 
-    .products-h2 {
-        font-size: 2rem;
+    .nav-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.2rem;
+    }
+
+    .nav-logo h1 {
+      font-size: 1.5rem;
     }
 
     /* product */
     .products-h2 {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
+        letter-spacing: 3px;
     }
+
+    .products-list {
+      margin-top: 4rem;
+    }
+    
 
 }
