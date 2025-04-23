@@ -1,4 +1,19 @@
 
+// loader para estilizar pagina //
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+
+  setTimeout(() => {
+    loader.classList.add('fade-out');
+
+    // Si querés removerlo del DOM después de la animación
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 1000); // coincide con el transition: opacity 1s
+  }, 4000); // 4 segundos de duración del loader
+});
+
 
  // funcion glass para el navbar //
 window.addEventListener('scroll', () => {
