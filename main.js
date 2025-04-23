@@ -7,11 +7,11 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     loader.classList.add('fade-out');
 
-    // Si querés removerlo del DOM después de la animación
+
     setTimeout(() => {
       loader.style.display = 'none';
     }, 1000); // coincide con el transition: opacity 1s
-  }, 4000); // 4 segundos de duración del loader
+  }, 3000); // 4 segundos de duración del loader
 });
 
 
